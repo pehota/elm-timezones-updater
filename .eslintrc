@@ -1,0 +1,32 @@
+{
+  "extends": [
+    "eslint:recommended", "prettier", "node"
+  ],
+  "plugins": ["prettier", "jest"],
+  "globals": {
+    "expect" : false
+  },
+  "parserOptions": {
+    "ecmaVersion": 6
+  },
+  "env": {
+    "jest/globals": true
+  },
+  "rules": {
+    "prettier/prettier": [
+      "error",
+      { "singleQuote": true, "trailingComma": "es5" }
+    ],
+    "eqeqeq": ["error", "always"],
+    "id-length": [2, {"min": 1}],
+    "import/extensions": [0],
+    "import/no-commonjs": [0],
+    "import/no-extraneous-dependencies": [0],
+    "import/no-nodejs-modules": [0],
+    "import/no-unresolved": [0],
+    "import/prefer-default-export": [0],
+    "max-len": [2, 80, 2],
+    "no-console": ["warn"],
+    "no-constant-condition": [0]
+  }
+}

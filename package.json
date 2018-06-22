@@ -1,0 +1,37 @@
+{
+  "name": "elm-timezones-updater",
+  "version": "1.0.0",
+  "description": "Updates the elm-timezones package with the latest timezones information",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "jest updater/tests/*.test.js",
+    "lint": "eslint .",
+    "lint:fix": "eslint --fix ."
+  },
+  "keywords": [
+    "Elm",
+    "timezones",
+    "updater",
+    "elm-timezones",
+    "elm/time"
+  ],
+  "author": "Dimitar Apostolov",
+  "license": "ISC",
+  "devDependencies": {
+    "compare-versions": "^3.3.0",
+    "eslint": "^4.19.1",
+    "eslint-config-node": "^3.0.0",
+    "eslint-config-prettier": "^2.9.0",
+    "eslint-plugin-jest": "^21.17.0",
+    "eslint-plugin-prettier": "^2.6.0",
+    "jest": "^23.1.0",
+    "moment-timezone": "^0.5.20",
+    "prettier": "^1.13.5"
+  },
+  "dependencies": {
+    "elm-format": "^0.6.1-alpha"
+  }
+}
